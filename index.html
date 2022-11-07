@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/be23d914d3.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <title>To Do List | Gabriel Yan</title>
+    <title>To Do</title>
 </head>
 
 <body>
@@ -16,15 +16,17 @@
         <h1 class="title">Tarefas Do Dia</h1>
         <div id="data-hora"></div>
     </main>
-    <div class="container">
-        <section>
-            <input type="text" name="tarefa" id="tarefa" placeholder="Adicione a sua tarefa 😃">
-            <input type="submit" value="Adicionar" id="btn" onclick="addTarefa()">
-            <input type="reset" value="Limpar Tudo" id="btn-reset" onclick="removeTarefa()">
-        </section>
-    </div>
+    <div id="caixa">
+        <div class="container">
+            <section>
+                <input type="text" name="tarefa" id="tarefa" placeholder="Adicione a sua tarefa">
+                <input type="submit" value="Adicionar" id="btn" onclick="addTarefa()">
+                <input type="reset" value="Limpar Tudo" id="btn-reset">
+            </section>
+        </div>
 
-    <ul id="lista"></ul>
+        <ul id="lista"></ul>
+    </div>
 
     <footer>
         <div class="footer-items">

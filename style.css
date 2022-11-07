@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +9,10 @@
 
 body {
     background-color: #181818;
+}
+
+#caixa {
+    padding: 0px 15px;
 }
 
 main {
@@ -20,59 +24,62 @@ main {
 }
 
 .title {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #00eb00;
 }
 
 #data-hora {
-    font-size: 20px;
+    font-size: 1.10rem;
     color: #00eb00;
 }
 
 section {
     display: flex;
     justify-content: center;
-    margin: 60px 0px;
+    padding: 3.75rem 0rem;
 }
 
-section > #tarefa {
-
-    padding: 15px;
-    margin: 5px;
+section>#tarefa {
+    text-transform: uppercase;
+    padding: .9375rem;
+    margin: .3125rem;
     color: #fff;
     background-color: #181818;
-    border: solid 1px #00ff00;
-    border-radius: 10px;
+    border: solid .0625rem #00ff00;
+    border-radius: .625rem;
 }
 
-section > #btn {
-    padding: 10px;
-    background-color: #00eb00;
+section>#btn {
+    padding: .625rem;
+    background-color: #00eb00e3;
     font-weight: 700;
     font-size: 1.2em;
-    border-radius: 10px;
+    border-radius: .625rem;
     cursor: cell;
-    color: rgb(49, 49, 49);
+    color: rgb(17, 17, 17);
+    transition: 0.3s;
 }
 
-section > #btn:hover {
+section>#btn:hover {
     background-color: #00ff00;
-    color: rgb(96, 96, 96);
+    color: rgb(17, 17, 17);
+    transform: scale(0.99);
 }
 
-section > #btn-reset {
-    padding: 10px;
-    background-color: #00eb00;
+section>#btn-reset {
+    padding: .625rem;
+    background-color: #161816;
     font-weight: 700;
     font-size: 1.2em;
-    border-radius: 10px;
+    border-radius: .625rem;
     cursor: cell;
-    color: rgb(49, 49, 49);
+    color: rgba(255, 255, 255, 0.847);
+    transition: 0.3s;
 }
 
-section > #btn-reset:hover {
-    background-color: #00ff00;
-    color: rgb(96, 96, 96);
+section>#btn-reset:hover {
+    background-color: #ffffff;
+    color: rgb(23, 23, 23);
 }
 
 .lista-tarefa {
@@ -82,28 +89,42 @@ section > #btn-reset:hover {
     flex-direction: column;
     list-style: url();
     color: #fff;
+    flex-wrap: wrap;
+    background-color: #878686;
+    text-transform: uppercase;
+    border-radius: 3rem;
 }
 
 footer {
     background-color: #ffffff;
     width: 100%;
     position: fixed;
-    bottom:0;
-    left:0;
-    padding: 20PX;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
 }
 
-footer > .footer-items {
-    font-size: 30px;
+footer>.footer-items {
+    font-size: 1.875rem;
     text-align: center;
 }
 
-footer > p {
+footer>p {
     text-align: center;
 }
 
-footer > a {
-    pointer-events: none;
+.footer-items a {
+    color: #002020;
 }
 
+.footer-items a:hover {
+    color: #333333;
+}
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    section {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

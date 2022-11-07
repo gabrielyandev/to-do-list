@@ -44,6 +44,9 @@ function addTarefa() {
     }
 }
 
+document.cookie = "list=''; expires=''; path=/";
+
 //remover tarefa
+
 
 
